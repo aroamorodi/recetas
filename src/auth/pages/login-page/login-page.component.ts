@@ -7,12 +7,12 @@ import {
   Validators,
 } from '@angular/forms';
 import { LoginServiceService } from '../../services/LoginService.service';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule],
   providers: [LoginServiceService],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.css',
